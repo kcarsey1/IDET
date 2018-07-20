@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+	<title>KYLE CARSEY PORTFOLIO</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+   
+
+    
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+    
+    <link href="css/landing.css" rel="stylesheet">
+
+  </head>
+	
+	
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>Kyle Carsey</p>
+  </div>
+  <div class="middle">
+    <h1>NEW WEBSITE COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+  <p>Some text</p>
+	 
+  </div>
+	 <center><a href="index.html"><img class="img-fluid mb-5 d-block mx-auto" src="./img/button.png" alt=""></a></center>
+</div>
+	
+
+<script>
+
+var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+
+
+var countdownfunction = setInterval(function() {
+
+    
+    var now = new Date().getTime();
+    
+    
+    var distance = countDownDate - now;
+    
+
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+     
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+	
+	
+
+</body>
+  
+	
+    
+
+
+
+</html>
